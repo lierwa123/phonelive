@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunbao.common.custom.MyFrameLayout2 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/buyer_05">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/buyer_13"
+            android:tint="@color/gray3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/mall_243"
+            android:textColor="@color/gray3"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/btn_del"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="right"
+        android:padding="5dp"
+        android:src="@mipmap/close_01"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/video_tag"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/buyer_16"
+        android:visibility="invisible" />
+
+
+</com.yunbao.common.custom.MyFrameLayout2>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_gravity="bottom">
+
+    <ImageView
+        android:id="@+id/btn_gift"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:src="@mipmap/icon_live_gift" />
+
+
+    <ImageView
+        android:id="@+id/btn_function"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/btn_gift"
+        android:padding="5dp"
+        android:src="@mipmap/icon_live_func" />
+
+    <ImageView
+        android:id="@+id/btn_msg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/btn_function"
+        android:padding="5dp"
+        android:src="@mipmap/icon_live_msg" />
+
+    <LinearLayout
+        android:id="@+id/group_mic"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/btn_msg"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/btn_mic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:src="@mipmap/icon_live_mic_open" />
+
+        <ImageView
+            android:id="@+id/btn_face"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@mipmap/icon_live_voice_face" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/btn_join"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/group_mic"
+        android:padding="5dp"
+        android:src="@mipmap/icon_live_voice_join_1" />
+
+    <ImageView
+        android:id="@+id/btn_chat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:src="@mipmap/icon_live_chat" />
+
+
+    <TextView
+        android:id="@+id/red_point"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_alignTop="@id/btn_msg"
+        android:layout_alignRight="@id/btn_msg"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_red_point"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:minWidth="14dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="1"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        android:translationY="-4dp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

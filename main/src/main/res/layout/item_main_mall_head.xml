@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <android.support.v7.widget.CardView
+        android:id="@+id/banner_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="true"
+        >
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:delay_time="3000"
+            app:image_scale_type="fit_xy"
+            app:indicator_drawable_selected="@drawable/bg_home_indicator_selected"
+            app:indicator_drawable_unselected="@drawable/bg_home_indicator_unselected"
+            app:indicator_height="8dp"
+            app:indicator_margin="6dp"
+            app:indicator_width="8dp" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_main_mall_scroll_0">
+
+            <View
+                android:id="@+id/scroll_indicator"
+                android:layout_width="25dp"
+                android:layout_height="3dp"
+                android:background="@drawable/bg_main_mall_scroll_1" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

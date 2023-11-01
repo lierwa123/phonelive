@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp">
+
+    <include layout="@layout/item_buyer_order_base" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/btn_delete_order"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:background="@drawable/buyer_02"
+            android:gravity="center"
+            android:minWidth="86dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/mall_198"
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

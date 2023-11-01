@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        ndk {
+            abiFilters "armeabi-v7a","arm64-v8a"
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs','../libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile files('libs/MobCommons-2020.0928.1220.jar')
+    compile files('libs/MobTools-2020.0917.1108.jar')
+    compile files('libs/ShareSDK-Core-3.8.2.jar')
+    compile files('libs/ShareSDK-Facebook-3.8.2.jar')
+    compile files('libs/ShareSDK-FacebookMessenger-3.8.2.jar')
+    compile files('libs/ShareSDK-Line-3.8.2.jar')
+    compile files('libs/ShareSDK-QQ-3.8.2.jar')
+    compile files('libs/ShareSDK-QZone-3.8.2.jar')
+    compile files('libs/ShareSDK-Twitter-3.8.2.jar')
+    compile files('libs/ShareSDK-Wechat-3.8.2.jar')
+    compile files('libs/ShareSDK-Wechat-Core-3.8.2.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-3.8.2.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-3.8.2.jar')
+    compile files('libs/open_sdk_r6019_lite.jar')
+}

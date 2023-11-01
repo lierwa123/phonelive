@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <ImageView
+        android:id="@+id/btn_voice"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:padding="5dp"
+        android:src="@mipmap/icon_input_voice" />
+
+    <com.yunbao.common.custom.InterceptFrameLayout
+        android:id="@+id/edit_wrap"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_input_1"
+            android:gravity="center_vertical"
+            android:hint="@string/im_send_msg"
+            android:imeActionLabel="@string/send"
+            android:imeOptions="actionSend"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/gray1"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:id="@+id/btn_voice_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_voice_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_input_voice_1"
+                android:gravity="center"
+                android:text="@string/im_press_say"
+                android:textColor="@color/gray1"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+
+    </com.yunbao.common.custom.InterceptFrameLayout>
+
+    <ImageView
+        android:id="@+id/btn_face"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:padding="5dp" />
+
+
+    <ImageView
+        android:id="@+id/btn_more"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:padding="5dp"
+        android:src="@mipmap/icon_input_more" />
+
+
+</LinearLayout>

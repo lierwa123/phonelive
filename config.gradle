@@ -1,0 +1,32 @@
+ext {
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 23,
+            targetSdkVersion : 28,
+            versionCode      : 127,
+            versionName      : "7.2.0"
+    ]
+
+    manifestPlaceholders = [
+            //serverHost       : "http://www.linyuanchuanmei.cn",
+            serverHost       : "http://43.138.137.30",
+
+            //极光推送 IM
+            jpushAppKey      : "66791eaf3a1394164016dd82",
+
+            //腾讯地图
+            txMapAppKey      : "GPIBZ-Y2FWX-4L-G4ZDV-M5FMJ",
+            txMapAppSecret   : "wvdMRbPT37JBBbSOm9mOmXtc5",
+            //腾讯bugly
+            buglyAppId       : "08c6143",
+            //百度语音识别
+            baiduAppId       : "11609",
+            baiduAppKey      : "OvQAiCsnVlZ1acMBPOp",
+            baiduAppSecretKey: "KMaltKRqBk2ozQBSk9YM4Sre",
+            //友盟统计
+            umengAppKey      : "5bff3f04b4650b1e"
+
+    ]
+
+}

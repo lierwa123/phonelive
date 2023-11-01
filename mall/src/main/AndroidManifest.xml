@@ -1,0 +1,178 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yunbao.mall">
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.BuyerActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.ShopApplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name=".activity.ManageClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopApplyBondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopApplyResultActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.SellerActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.ChooseGoodsClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SellerAddGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name=".activity.SellerManageGoodsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.GoodsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsOutSideDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsEditSpecActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopCertActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SellerAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SellerAddressEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name=".activity.BuyerAddressActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.BuyerAddressEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ShopHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsRecordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.GoodsMakeOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name=".activity.BuyerOrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.SellerOrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.SellerSendActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.BuyerCommentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.BuyerCommentAppendActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.BuyerOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SellerOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyerRefundApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyerRefundDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SellerRefundDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SellerRejectRefundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyerRefundOfficialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyerAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SellerAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyerCashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SellerCashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayContentActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayContentActivity2"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.PayContentPubActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayContentClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayContentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsAddOutSideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoodsCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SetManageClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SellerAddPlatActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

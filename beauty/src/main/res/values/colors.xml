@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_white">#e6ffffff</color>
+
+    <color name="bg_black">#80000000</color>
+
+    <color name="mh_gray2">#1affffff</color>
+    <color name="mh_textColor2">#DCDCDC</color>
+    <color name="textColor3">#C8C8C8</color>
+
+</resources>
